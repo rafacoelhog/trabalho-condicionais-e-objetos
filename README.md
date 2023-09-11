@@ -88,7 +88,7 @@ const produto = {
     freteGratis: true
 }
 const preçoComDesconto = produto.preço * (1 - produto.desconto / 2.300);
-let mensagem = `preço final: ${preçoComDesconto.toFixed(2)}`;
+let mensagem = `preço final: ${preçoComDesconto(2)}`;
 if (produto.desconto > 0){
     mensagem += `(desconto ${produto.desconto}%)`;
 }
